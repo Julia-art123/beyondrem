@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Tiers</title>
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="CSS/compare.css">
+
+    <!-- linking font -->
+     <!-- itc benguiat -->
+    <link rel="stylesheet" href="https://use.typekit.net/pfe5zct.css">
+
+    <!-- linking font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Nav Bar -->
+    <header>
+        <a class="logo" href="opening.html"><img height="50px" src="Images/logo.png" alt="BeyondREM Logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li class="inactive"><a href="home.html">Home</a></li>
+                <li class="inactive"><a href="tiers.html">Tiers</a></li>
+                <li class="active"><a href="compare.html">Compare</a></li>
+            </ul>
+        </nav>
+        <a class="CTA" href="booking.html"><button>Book Now</button></a>
+    </header>
+
+    <main>
+        <section class="compare-header">
+            <h1>Compare Dream Tiers</h1>
+            <p>Discover features across all tiers to find the best experience for you.</p>
+        </section>
+
+        <section class="compare-dropdowns">
+            <!-- Image containers -->
+        <div class="tier-container">
+
+            <select id="tier1">
+                <option value="basic">Basic</option>
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+                <option value="premiumplus">Premium Plus (Coming Soon...)</option>
+
+            </select>
+            <div class="tier-image" id="tier1-image">
+                <img src="Images/graphics/basic.png" alt="The BeyondREM mascot sits on a pier by the sea with a cocktail and looks out into the distance"" />
+            </div>
+        </div>
+        <div class="tier-container">
+    
+            <select id="tier2">
+                <option value="basic">Basic</option>
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+                <option value="premiumplus">Premium Plus (Coming Soon...)</option>
+            </select>
+            <div class="tier-image" id="tier2-image">
+                <img src="Images/graphics/standard.png" alt="The BeyondREM mascot holding a star glow stick, looking at the ancient person next to it"/>
+            </div>
+        </div>
+        </section>
+
+        <!-- Tier Details -->
+        <section class="compare-cards">
+            <!-- Tier 1 -->
+            <div id="tier1-details" class="card" data-tier="basic">
+                <h2>Basic</h2>
+                <ul>
+                    <li><i class="fa-solid fa-clock" style="color: #ffffff;"></i>1 hour</li>
+                    <li><i class="fa-solid fa-image" style="color: #ffffff;"></i>Object and Landscape <br> Interactivity: Basic (no people)</li>
+                    <li><i class="fa-solid fa-person-circle-xmark" style="color: #ffffff;"></i>No People Interactivity</li>
+                    <li><i class="fa-solid fa-brain" style="color: #ffffff;"></i>Control Over Dream: None</li>
+                    <li><i class="fa-solid fa-tag" style="color: #ffffff;"></i>Price: $99</li>
+                </ul>
+            </div>
+
+            <!-- Tier 2 -->
+            <div id="tier2-details" class="card" data-tier="basic">
+                <h2>Basic</h2>
+                <ul>
+                    <li><i class="fa-solid fa-clock" style="color: #ffffff;"></i>1 hour</li>
+                    <li><i class="fa-solid fa-image" style="color: #ffffff;"></i>Object and Landscape <br> Interactivity: Basic (no people)</li>
+                    <li><i class="fa-solid fa-person-circle-xmark" style="color: #ffffff;"></i>No People Interactivity</li>
+                    <li><i class="fa-solid fa-brain" style="color: #ffffff;"></i>Control Over Dream: None</li>
+                    <li><i class="fa-solid fa-tag" style="color: #ffffff;"></i>Price: $99</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Hidden Content for Other Tiers -->
+        <template id="tier-basic">
+            <h2>Basic</h2>
+            <ul>
+                <li><i class="fa-solid fa-clock" style="color: #ffffff;"></i>1 hour</li>
+                <li><i class="fa-solid fa-image" style="color: #ffffff;"></i>Object and Landscape <br> Interactivity: Basic (no people)</li>
+                <li><i class="fa-solid fa-person-circle-xmark" style="color: #ffffff;"></i>No People Interactivity</li>
+                <li><i class="fa-solid fa-brain" style="color: #ffffff;"></i>Control Over Dream: None</li>
+                <li><i class="fa-solid fa-tag" style="color: #ffffff;"></i>Price: $99</li>
+            </ul>
+        </template>
+
+        <template id="tier-standard">
+            <h2>Standard</h2>
+            <ul>
+                <li><i class="fa-solid fa-clock" style="color: #ffffff;"></i>1 hour</li>
+                <li><i class="fa-solid fa-image" style="color: #ffffff;"></i>Object and Landscape <br> Interactivity: Some</li>
+                <li><i class="fa-solid fa-person" style="color: #ffffff;"></i>People Interactivity: Limited</li>
+                <li><i class="fa-solid fa-brain" style="color: #ffffff;"></i>Control Over Dream: None</li>
+                <li><i class="fa-solid fa-tag" style="color: #ffffff;"></i>Price: $159</li>
+            </ul>
+        </template>
+
+        <template id="tier-premium">
+            <h2>Premium</h2>
+            <ul>
+                <li><i class="fa-solid fa-clock" style="color: #ffffff;"></i>1 hour</li>
+                <li><i class="fa-solid fa-images" style="color: #ffffff;"></i>Object and Landscape <br> Interactivity: Full</li>
+                <li><i class="fa-solid fa-people-robbery" style="color: #ffffff;"></i>People <br> Interactivity: Full</li>
+                <li><i class="fa-solid fa-brain" style="color: #ffffff;"></i>Control Over Dream: Full</li>
+                <li><i class="fa-solid fa-tag" style="color: #ffffff;"></i>Price: $199</li>
+            </ul>
+        </template>
+
+        <template id="tier-premiumplus">
+            <h2>Premium Plus <span style="color: rgb(199, 199, 199);; font-size: 18px;"><br>(Coming Soon...)</span></h2>
+            <ul>
+                <li><i class="fa-solid fa-clock" style="color: #ffffff;"></i>1 hour</li>
+                <li><i class="fa-solid fa-globe" style="color: #ffffff;"></i>Object and Landscape <br> Interactivity: Shared & Interactive</li>
+                <li><i class="fa-solid fa-people-group" style="color: #ffffff;"></i>People <br> Interactivity: Group</li>
+                <li><i class="fa-solid fa-brain" style="color: #ffffff;"></i>Control Over Dream: <br>Full + Group Control</li>
+                <li><i class="fa-solid fa-tag" style="color: #ffffff;"></i>Price: $299</li>
+            </ul>
+        </template>
+    </main>
+
+    <!-- Back to top button -->
+    <button id="backToTop">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+    
+    <!-- Footer waves -->
+    <img class='footer-waves' alt="flat style wave graphic" src="Images/graphics/footer-waves.png" >
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="footer-top">
+            <div class="mission">
+                <h1>Our Mission</h1> 
+                <p>
+                    Whether it's revisiting your memories, journeying in a fantastical world, or 
+                    living out future possibilities, our team is dedicated to crafting your sweet dreams. 
+                    Passion, creativity, and precision are the driving forces behind BeyondREM. 
+                    Dream big—let us make it happen. 
+                </p>
+            </div>
+
+            <div>
+                <h1>Contact Us</h1>
+                <p>
+                    <strong>Tel:</strong> +1 (673)-275-1111 <br>
+                    <strong>Email:</strong> BeyondREM.chat@info.ca <br>
+                    <strong>Address:</strong> 78 Narniabizness Road SW H6S 7M2
+                </p>
+            </div>
+
+            <div>
+                <h1>Quick Links</h1>
+                <ul class="footer-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="tiers.html">Tiers</a></li>
+                    <li><a href="compare.html">Compare</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a class="logo" href='opening.html'><img src="Images/logo.png" alt="Full BeyondREM Logo" style="height:50px;"></a>
+
+            <div class="logo-follow">
+                <h2>Follow us</h2>
+                <div class="socials">
+                    <i id="icon-1"class="fa-brands fa-facebook" alt="icon of facebook logo"></i>
+                    <i id="icon-2" class="fa-brands fa-instagram" alt="icon of instagram logo"></i>
+                    <i id="icon-3"class="fa-brands fa-x-twitter" alt="icon of twitter logo"></i>
+                    <i id="icon-4" class="fa-brands fa-youtube" alt="icon of youtube logo"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Linking javasript -->
+    <script src="JS/compare.js"></script>
+</body>
+</html>
