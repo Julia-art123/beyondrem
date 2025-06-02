@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const tierImages = {
-        basic: "../Images/graphics/basic.png",
-        standard: "../Images/graphics/standard.png",
-        premium: "../Images/graphics/premium.png",
-        premiumplus: "../Images/graphics/premium-plus.png",
+        basic: "Images/graphics/basic.png",
+        standard: "Images/graphics/standard.png",
+        premium: "Images/graphics/premium.png",
+        premiumplus: "Images/graphics/premium-plus.png",
     };
 
     // Function to update images
