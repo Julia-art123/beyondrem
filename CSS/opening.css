@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Chopin Script';
+    src: url('../Fonts/ChopinScript.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Cabin';
+    src: url('../Fonts/Cabin-Regular.ttf') format('truetype');
+}
+
+html{
+    cursor: url(../Images/graphics/cursor-inactive.png) 5 5, default;
+    background: url(../Images/Graphics/opening-waves.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height: 100vh;
+    background-color: rgb(10, 10, 61);
+}
+
+/* OPENING PAGE MESSAGE */
+h1{
+    font-family:"itc-benguiat", serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(251, 241, 239);
+}
+
+h2{
+    font-family: 'Chopin Script';
+    font-weight: 200;
+    font-size: 130px;
+    margin-bottom: 50%;
+}
+
+.message{
+    margin-left: 50.0em;
+    margin-top: 6.0em;
+}
+
+#hiddenText1{
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#hiddenText2{
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#hiddenText3{
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#hiddenText4{
+    opacity: 0;
+    transition: opacity 2s;
+    color: rgb(248, 216, 66);
+    margin: 0.2em 0;
+}
+
+#hiddenLink{
+    text-align: right;
+}
+
+/* LINK TO HOMEPAGE */
+a{
+    float: right;
+    margin-right: 4em;
+    color: rgb(251, 241, 239);
+    font-family:"itc-benguiat", serif;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+a:hover{
+    color: rgb(99, 106, 184);
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}

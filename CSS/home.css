@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adding Font */
+@font-face{
+    font-family: 'Cabin';
+    src: url('../Fonts/Cabin-Regular.ttf') format('truetype');
+}
+
+html{
+    font-family: "itc-benguiat", serif;
+    background-color: rgb(10, 10, 61);
+    color: rgb(251, 241, 239);
+    cursor: url(../Images/graphics/cursor-inactive.png) 5 5, auto;
+}
+
+/* Nav Bar */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.7em 2.0em;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0px 2px 60px 0px rgb(99, 106, 184);
+    font-weight: 400;
+    background-color: #0a0a3d;
+    z-index: 2;
+}
+
+.logo {
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+    margin-right: auto;
+    z-index: 99;
+}
+
+.nav-links li {
+    display: inline-flex;
+    font-size: 20px;
+    background-color: rgb(10, 10, 61);
+}
+
+.nav-links li a {
+    margin-right: 2.0em;
+    color: rgb(251, 241, 239);
+    padding: 10px;
+}
+
+.active a{
+    text-decoration: underline;
+    text-decoration-color: rgb(248, 216, 66);
+}
+
+.inactive a{
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(248, 216, 66);
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}
+
+/* CTA */
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 1.0em;
+    font-size: 20px;
+    font-family: "itc-benguiat", serif;
+    font-weight: 400;
+    color: rgb(10, 10, 61);
+    background-color: rgb(248, 216, 66);
+}
+
+button:hover {
+    background-color: rgb(249, 241, 206);
+    transition: all 0.2s ease 0s;
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}
+
+/* Hero Section */
+.hero{
+    display: flex;
+    padding: 4.5em;
+    padding-top: 11.5em;
+    gap: 0em;
+    height: 100vh;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+}
+
+.text-content{
+    width: 50em;
+}
+
+.text-content p{
+    font-size: 4.2em;
+    font-weight: 700;
+    line-height: 1.0;
+    margin-bottom: 25px;
+}
+.text-content p2{
+    line-height: 1.5;
+    font-size: 1.5em;
+}
+
+.CTA button{
+    margin-top: 30px;
+    color: rgb(251, 241, 239); 
+    background-color: rgb(10, 10, 61);
+    border:2px solid rgb(248, 216, 66);
+}
+
+.CTA button:hover{
+    margin-top: 30px;
+    color: rgb(10, 10, 61);
+    background-color: rgb(248, 216, 66);
+    transition: all 0.2s ease 0s;
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}
+
+/* Our process */
+.process-header{
+    margin-top: 5em;
+    background-color: rgb(251, 241, 239);
+    color: rgb(10, 10, 61);
+    padding: 3.5em 2em;
+}
+
+.process-header h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+.process{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin-left: 15px;
+    padding: 3em 4em 1em;
+    background-color: rgb(251, 241, 239);
+}
+
+.process-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30em;
+}
+
+#arrow{
+    font-size: 25px;
+}
+
+.process i{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin: 5px 0px 15px;
+}
+
+.process h1{
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.process p{
+    line-height: 23px;
+    font-size: 18px;
+    font-family: "Cabin";
+}
+
+/* Client reviews */
+.container{
+    padding: 5em 7em;
+    margin: 10em 0em 5em;
+}
+
+.review{
+    padding: 4em 4em 5em;
+    box-shadow: 0px 5px 15px rgb(99, 106, 184);
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(10, 10, 61);
+}
+
+.review h1{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.review-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-content {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    gap: 0px;
+}
+
+.review-text {
+    flex: 1;
+    margin-left: 30px;
+    text-align: center;
+    color: rgb(251, 241, 239);
+    border-right: 1px solid rgb(248, 216, 66);
+}
+
+.review p{
+    font-size: 1em;
+}
+
+.review-text h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: rgb(248, 216, 66);
+    margin-top: 10px;
+}
+
+.commend{
+    font-size: 1.3em;
+    font-family: "Cabin";
+}
+
+#customer-review{
+    text-align: left;
+    margin-bottom: 20px;
+}
+#customer-name{
+    text-align: left;
+}
+
+.review-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 30px;
+    width:auto;
+    height:auto;
+}
+
+.review-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 500px;
+    max-height: 500px;
+}
+.commend {
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+.arrow-left-arrow, .arrow-right-arrow{
+    font-size: 25px;
+}
+
+.arrow-left-arrow:hover,.arrow-right-arrow:hover{
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+    color: rgb(248, 216, 66);
+}
+
+/* FAQ */
+.faq{
+    width: 100%;
+    background-color: rgb(10, 10, 61);
+    padding: 3.5em 5em;
+    box-shadow: 0px 5px 15px rgb(99, 106, 184);
+    border-radius: 8px;
+    z-index: 0;
+    align-items: center;
+}
+
+.faq-container{
+    margin-bottom: 20px;
+}
+
+.faq h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.faq-question {
+    width:100%;
+    padding: 1em 3em;
+    font-size: 20px;
+    font-weight: 550;
+    font-family: "Cabin";
+    text-align: left;
+    background: white;
+    color: black;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    outline: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.faq-answer p {
+    font-family: "Cabin";
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 3px solid rgb(248, 216, 66);
+    color:   rgb(251, 241, 239);
+}
+
+.faq-question:hover {
+    background-color: #b8bdf0;
+}
+
+/* Back to top button */
+#backToTop{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(10, 10, 61);
+    background-color: rgb(251, 241, 239);
+    border: none;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    z-index: 2;
+}
+
+#backToTop:hover {
+    color: rgb(251, 241, 239);
+    transition: all 0.2s ease 0s;
+    background-color: rgb(99, 106, 184);
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Footer */
+#footer{
+    margin-top: -5px;
+    height: 17em;
+    padding: 4.0em 4.5em;
+    color: rgb(251, 241, 239);
+    font-family: "Cabin";
+    background-image: linear-gradient(rgb(25, 102, 158), 10%,rgb(10, 10, 61));
+    z-index: 0;
+}
+
+.footer-waves{
+    position: sticky;
+    width: 100%;
+    bottom: 0px;
+    opacity: 0.5;
+    z-index: -1;
+    margin-top: -100em;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-bottom{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 3em;
+}
+
+/* Mission message and quick links */
+h1{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.mission{
+    width: 35%;
+}
+
+.mission p{
+    line-height: 28px;
+}
+
+.footer-links li{
+    list-style-type: none;
+    text-align: right;
+}
+
+.footer-links li a{
+    line-height: 28px;
+    font-size: 18px;
+    text-decoration: underline;
+    color: rgb(251, 241, 239);
+}
+
+.footer-links li a:hover{
+    color: rgb(248, 216, 66);
+    transition: all 0.2s ease 0s;
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}
+
+/* social media links */
+.logo-follow{
+    display: flex;
+    align-items: center;
+    gap:1.3em;
+}
+
+h2{
+    font-size: 18px;
+}
+
+.socials{
+    font-size: 23px;
+    display:flex;
+    align-items: center;
+    gap:0.5em;
+}
+
+.logo-follow i:hover{
+    color: rgb(248, 216, 66);
+    transition: all 0.2s ease 0s;
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}

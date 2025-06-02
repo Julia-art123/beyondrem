@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Document</title>
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="../CSS/home.css">
+
+    <!-- linking font -->
+    <!-- itc benguiat -->
+    <link rel="stylesheet" href="https://use.typekit.net/pfe5zct.css">
+
+    <!-- linking font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Nav Bar -->
+    <header>
+        <a class="logo" href="../HTML/opening.html" ><img src="../Images/logo.png" alt="BeyondREM Logo" height="50px"></a>
+        <nav>
+            <ul class="nav-links">
+                <li class="active"><a href="../HTML/home.html">Home</a></li>
+                <li class="inactive"><a href="../HTML/tiers.html">Tiers</a></li>
+                <li class="inactive"><a href="../HTML/compare.html">Compare</a></li>
+            </ul>
+        </nav>
+        <a href="../HTML/booking.html"><button>Book Now</button></a>
+    </header>
+
+    <div class="hero">
+        <div class="text-content">
+            <p style="color: #f8d842;">Your Dream, <br> Our Craft.</p>
+            <p2>Discover personalized dream experiences crafted just for you. Inspiration, relaxation, or a touch of magic <br>— BeyondREM makes it unforgettable.</p2>
+            <br>
+            <a class="CTA" href="../HTML/booking.html"><button>Book Now</button></a>
+        </div>
+        <div class="image-content">
+            <img src="../Images/graphics/home-page.png" alt="Home Page logo" width="400px">
+        </div>
+    </div>
+    
+    <!-- Our process -->
+   <div class="process-header">
+        <h1>Our Journey Together</h1>
+
+        <div class="process">
+            <div class="process-container">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h1>Book an Appointment</h1>
+                <p>
+                    Share your vision by booking an appointment with us.
+                </p>
+            </div>
+
+            <i id='arrow' class="fa-solid fa-arrow-right"></i>
+
+            <div class="process-container">
+                <i class="fa-solid fa-comments"></i>
+                <h1>Personalization</h1>
+                <p>
+                    Discuss in-depth with our crafters for a
+                    fulfilling BeyondREM experience.
+                </p>
+            </div>
+
+            <i id='arrow' class="fa-solid fa-arrow-right"></i>
+
+            <div class="process-container">
+                <i class="fa-solid fa-cubes"></i>
+                <h1>We Build It</h1>
+                <p>
+                    Our crafting professionals will masterfully build your dreamscape.
+                </p>
+            </div>
+
+            <i id='arrow' class="fa-solid fa-arrow-right"></i>
+
+            <div class="process-container">
+                <i class="fa-solid fa-moon"></i>
+                <h1>Sweet Dreams</h1>
+                <p>
+                    Lie down and enjoy！
+                </p>
+            </div>
+
+        </div>
+    </div>   
+    
+    <!-- Client reviews -->
+    <div class="container">
+        <div class="review">
+            <h1>What Our Clients Say</h1>
+            <div class="review-container">
+                <div class="arrow-left-arrow" onclick="prevReview()"><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="review-content">
+                    <div class="review-text">
+                        <h2 id="customer-name">Abby</h2>
+                        <p id="customer-review">★★★★★</p>
+                        <div class="commend" id="commend">
+                            <p>I don't write reviews much but BeyondREM truly deserves the praise. My grandma recently passed and through BeyondREM, I got to relive one of my most precious memories with her. Thank you so much- shout out to the BeyondREM team!</p>
+                        </div>
+                    </div>
+    
+                    <div class="review-photo">
+                        <img id="customer-photo" src="../Images/photos/balloon.png" alt="Black and white picture of a woman pushing a stroller with a radial blur focus on the coloured ballons.">
+                    </div>
+    
+                </div>
+                <div class="arrow-right-arrow" onclick="nextReview()"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="container">
+        <div class="faq">
+            <h1>FAQs</h1>
+            <div class="faq-container">
+                <button class="faq-question">What is the process behind our dream-making technology? <i class="fa-solid fa-arrow-down"></i></button>
+                <div class="faq-answer">
+                    <p>Our process involves lying comfortably while a specialized device attaches sensors to your scalp. These sensors connect to a control console that guides you seamlessly into the dream world.</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <button class="faq-question">What kinds of dreams can I experience? Are there any restrictions?<i class="fa-solid fa-arrow-down"></i></button>
+                <div class="faq-answer">
+                    <p>You can explore diverse dreamscapes, from traveling the world and meeting specific people to immersing yourself in fully virtual environments. The possibilities are endless, as long as they comply with our Dream Guidelines. For details on the available dream tiers, please visit our Tiers page. Dreams involving harm to yourself or others, as well as any illegal activities, are strictly prohibited.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <button class="faq-question">How often can I use your services?<i class="fa-solid fa-arrow-down"></i></button>
+                <div class="faq-answer">
+                    <p>Due to regulatory requirements, our service is limited to once per month per individual, and a valid ID is required at the time of purchase. This policy is in place to ensure a balanced and healthy engagement with our dream technology.</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <button class="faq-question">Can I get a refund after purchasing your service?<i class="fa-solid fa-arrow-down"></i></button>
+                <div class="faq-answer">
+                    <p>Unfortunately, we currently do not offer refunds. We encourage you to carefully consider your purchase to ensure it meets your expectations.</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <button class="faq-question">Who might not be eligible for your services?<i class="fa-solid fa-arrow-down"></i></button>
+                <div class="faq-answer">
+                    <p>Our service is not recommended for individuals with heart conditions, mental health disorders, psychiatric illnesses, or those under the age of 18. Minors or individuals with these conditions may only use our service if accompanied by an adult guardian who provides informed consent by signing a risk disclosure agreement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top button -->
+    <button id="backToTop">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <!-- Footer waves -->
+    <img class='footer-waves' src="../Images/graphics/footer-waves.png" alt="flat style wave graphic" width="100%">
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="footer-top">
+            <div class="mission">
+                <h1>Our Mission</h1> 
+                <p>
+                    Whether it's revisiting your memories, journeying in a fantastical world, or 
+                    living out future possibilities, our team is dedicated to crafting your sweet dreams. 
+                    Passion, creativity, and precision are the driving forces behind BeyondREM. 
+                    Dream big—let us make it happen. 
+                </p>
+            </div>
+
+            <div>
+                <h1>Contact Us</h1>
+                <p>
+                    <strong>Tel:</strong> +1 (673)-275-1111 <br>
+                    <strong>Email:</strong> BeyondREM.chat@info.ca <br>
+                    <strong>Address:</strong> 78 Narniabizness Road SW H6S 7M2
+                </p>
+            </div>
+
+            <div>
+                <h1>Quick Links</h1>
+                <ul class="footer-links">
+                    <li><a href="../HTML/home.html">Home</a></li>
+                    <li><a href="../HTML/tiers.html">Tiers</a></li>
+                    <li><a href="../HTML/compare.html">Compare</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a class="logo" href='../HTML/opening.html'><img src="../Images/logo.png" alt="Full BeyondREM Logo" style="height:50px;"></a>
+
+            <div class="logo-follow">
+                <h2>Follow us</h2>
+                <div class="socials">
+                    <i id="icon-1"class="fa-brands fa-facebook" alt="icon of facebook logo"></i>
+                    <i id="icon-2" class="fa-brands fa-instagram" alt="icon of instagram logo"></i>
+                    <i id="icon-3"class="fa-brands fa-x-twitter" alt="icon of twitter logo"></i>
+                    <i id="icon-4" class="fa-brands fa-youtube" alt="icon of youtube logo"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- linking javascript -->
+    <script src="../JS/home.js"></script>
+</body>
+</html>

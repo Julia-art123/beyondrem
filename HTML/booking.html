@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Tiers</title>
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="../CSS/booking.css">
+
+    <!-- linking font -->
+     <!-- itc benguiat -->
+    <link rel="stylesheet" href="https://use.typekit.net/pfe5zct.css">
+
+    <!-- linking font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <header>
+        <a class="logo" href="../HTML/opening.html"><img height="50px" src="../Images/logo.png"
+                alt="BeyondREM full logo in colour"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../HTML/home.html">Home</a></li>
+                <li><a href="../HTML/tiers.html">Tiers</a></li>
+                <li><a href="../HTML/compare.html">Compare</a></li>
+            </ul>
+        </nav>
+        <a class="CTA" href="../HTML/booking.html"><button>Book Now</button></a>
+    </header>
+    <div class="bigtitle"><h1>Book an Appointment</h1></div>
+    <!-- CONTENT WRAPPER -->
+    <div id="content-wrapper">
+        <!-- Calendar and Form Section -->
+        <div id="form-wrapper">
+            <div id="calendar-container">
+                <!-- Calendar Section -->
+                <div id="calendar">
+                    <div id="calendar-header">
+                        <button id="prev-month">&lt;</button>
+                        <span id="month-year"></span>
+                        <button id="next-month">&gt;</button>
+                    </div>
+                    <table id="calendar-table">
+                        <thead>
+                            <tr>
+                                <th>Su</th>
+                                <th>Mo</th>
+                                <th>Tu</th>
+                                <th>We</th>
+                                <th>Th</th>
+                                <th>Fr</th>
+                                <th>Sa</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendar-body"></tbody>
+                    </table>
+                </div>
+    
+
+                <!-- Time Selection Section -->
+                <h3 id="selected-date" style="font-family:Cabin;">Please select a date to see available appointments.</h3>
+                <div id="time-selection">
+                    <select id="am-pm-selector">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                    <div id="time-slots-container" style="display: none;">
+                        <ul id="time-slots"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="form-container">
+                <h3>Personal Information</h3>
+                <form id="appointment-form">
+                    <div id="name-row" class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div id="contact-row" class="form-row">
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="tel" id="phone-number" name="phone-number" placeholder="123-456-7890">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="example@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="id-upload">Upload ID:</label>
+                        <input type="file" id="id-upload" name="id-upload" accept="image/*" required>
+                    </div>
+                    <div id="tier-selection" class="form-group">
+                        <label for="tier">Choose Your Tier:</label>
+                        <select id="tier" name="tier">
+                            <option value="Basic">Basic</option>
+                            <option value="Standard">Standard</option>
+                            <option value="Premium">Premium</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-container">
+        <div class="checkboxes">
+            <div>
+                <input type="checkbox" id="terms-checkbox1">
+                <label for="terms-checkbox1">I have read, understood, and agreed to the <a href="#" style="font-family:Cabin;text-decoration:underline; color: #0a0a3d; cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;" >terms of service.</a></label>
+            </div>
+            <div>
+                <input type="checkbox" id="terms-checkbox2">
+                <label for="terms-checkbox2">I agree to the <a href="#" style="font-family:Cabin; text-decoration: underline;color: #0a0a3d; cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;">cancellation policy.</a></label>
+            </div>
+        </div>
+            <button id="book-appointment" disabled>Book Appointment</button>
+        </div>
+
+    <!-- Back to top button -->
+    <button id="backToTop">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+    
+    <!-- Footer waves -->
+    <img class='footer-waves' alt="flat style wave graphic" src="../Images/graphics/footer-waves.png">
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="footer-top">
+            <div class="mission">
+                <h1>Our Mission</h1> 
+                <p>
+                    Whether it's revisiting your memories, journeying in a fantastical world, or 
+                    living out future possibilities, our team is dedicated to crafting your sweet dreams. 
+                    Passion, creativity, and precision are the driving forces behind BeyondREM. 
+                    Dream big—let us make it happen. 
+                </p>
+            </div>
+
+            <div>
+                <h1>Contact Us</h1>
+                <p>
+                    <strong>Tel:</strong> +1 (673)-275-1111 <br>
+                    <strong>Email:</strong> BeyondREM.chat@info.ca <br>
+                    <strong>Address:</strong> 78 Narniabizness Road SW H6S 7M2
+                </p>
+            </div>
+
+            <div>
+                <h1>Quick Links</h1>
+                <ul class="footer-links">
+                    <li><a href="../HTML/home.html">Home</a></li>
+                    <li><a href="../HTML/tiers.html">Tiers</a></li>
+                    <li><a href="../HTML/compare.html">Compare</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a class="logo" href='../HTML/opening.html'><img src="../Images/logo.png" alt="Full BeyondREM Logo" style="height:50px;"></a>
+
+            <div class="logo-follow">
+                <h2>Follow us</h2>
+                <div class="socials">
+                    <i id="icon-1"class="fa-brands fa-facebook" alt="icon of facebook logo"></i>
+                    <i id="icon-2" class="fa-brands fa-instagram" alt="icon of instagram logo"></i>
+                    <i id="icon-3"class="fa-brands fa-x-twitter" alt="icon of twitter logo"></i>
+                    <i id="icon-4" class="fa-brands fa-youtube" alt="icon of youtube logo"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<!--link to JS-->
+<script src="../JS/booking.js"></script>
+</html>

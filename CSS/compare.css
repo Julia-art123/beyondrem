@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adding Font */
+@font-face{
+    font-family: 'Cabin';
+    src: url('../Fonts/Cabin-Regular.ttf') format('truetype');
+}
+
+html{
+    font-family: "itc-benguiat", serif;
+    background-color: rgb(10, 10, 61);
+    color: rgb(251, 241, 239);
+    cursor: url(../Images/graphics/cursor-inactive.png) 5 5, auto;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "itc-benguiat", serif;
+    z-index: 1;
+}
+
+/* Nav Bar */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.7em 2.0em;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0px 2px 60px 0px rgb(99, 106, 184);
+    font-weight: 400;
+    background-color: #0a0a3d;
+    z-index: 2;
+}
+
+.logo {
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+    margin-right: auto;
+    z-index: 99;
+}
+
+.nav-links li {
+    display: inline-flex;
+    font-size: 20px;
+    background-color: rgb(10, 10, 61);
+}
+
+.nav-links li a {
+    margin-right: 2.0em;
+    color: rgb(251, 241, 239);
+    padding: 10px;
+}
+
+.active a{
+    text-decoration: underline;
+    text-decoration-color: rgb(248, 216, 66);
+}
+
+.inactive a{
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(248, 216, 66);
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}
+
+/* CTA */
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 1.0em;
+    font-size: 20px;
+    font-family: "itc-benguiat", serif;
+    font-weight: 400;
+    color: rgb(10, 10, 61);
+    background-color: rgb(248, 216, 66);
+}
+
+button:hover {
+    background-color: rgb(249, 241, 206);
+    transition: all 0.2s ease 0s;
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}
+
+/* Main Content */
+main {
+    padding-top: 100px;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: -850px;
+}
+
+.compare-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.compare-header p {
+    font-size: 18px;
+    font-family: "Cabin";
+    color: rgb(199, 199, 199);
+    margin-bottom: 50px;
+}
+/*images*/
+.tier-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 10px; 
+}
+
+.tier-image {
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.tier-image img {
+    width: 450px; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* Dropdown Section */
+.compare-dropdowns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.compare-dropdowns select {
+    padding: 15px;
+    font-size: 16px;
+    font-family: "itc-benguiat", serif; 
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199);
+    background-color: white;
+    color: rgb(10, 10, 61);
+    width: 450px;
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}
+
+/* Comparison Cards in Two Columns */
+.compare-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgb(10, 10, 61);
+    margin: 0 80px;
+    border-radius: 10px;
+    width: 450px;
+    padding: 50px;
+    color: white;
+    text-align: center; 
+    box-shadow: 0px 5px 15px rgb(99, 106, 184);
+}
+
+.card h2 {
+    color: rgb(248, 216, 66);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card li {
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: rgb(199, 199, 199);
+    text-align: center; 
+}
+
+.card li i {
+    unicode-bidi: isolate;
+    display: block; 
+    font-size: 100px; 
+    font-style: normal;
+    color: rgb(248, 216, 66);
+    margin-bottom: 10px;
+}
+
+/* Back to top button */
+#backToTop{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(10, 10, 61);
+    background-color: rgb(251, 241, 239);
+    border: none;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    z-index: 2;
+}
+
+#backToTop:hover {
+    color: rgb(251, 241, 239);
+    transition: all 0.2s ease 0s;
+    background-color: rgb(99, 106, 184);
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Footer */
+#footer{
+    height: 17em;
+    padding: 4.0em 4.5em;
+    color: rgb(251, 241, 239);
+    font-family: "Cabin";
+    background-image: linear-gradient(rgb(25, 102, 158), 10%,rgb(10, 10, 61));
+    z-index: 0;
+}
+
+.footer-waves{
+    position: sticky;
+    width: 100%;
+    bottom: 0px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-bottom{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 3em;
+}
+
+/* Mission message and quick links */
+h1{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.mission{
+    width: 35%;
+}
+
+.mission p{
+    line-height: 28px;
+}
+
+.footer-links li{
+    list-style-type: none;
+    text-align: right;
+}
+
+.footer-links li a{
+    line-height: 28px;
+    font-size: 18px;
+    text-decoration: underline;
+    color: rgb(251, 241, 239);
+}
+
+.footer-links li a:hover{
+    color: rgb(248, 216, 66);
+    transition: all 0.2s ease 0s;
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}
+
+/* social media links */
+.logo-follow{
+    display: flex;
+    align-items: center;
+    gap:1.3em;
+}
+
+h2{
+    font-size: 18px;
+}
+
+.socials{
+    font-size: 23px;
+    display:flex;
+    align-items: center;
+    gap:0.5em;
+}
+
+.logo-follow i:hover{
+    color: rgb(248, 216, 66);
+    transition: all 0.2s ease 0s;
+    cursor: url(../Images/graphics/cursor-active.png) 5 5, auto;
+}
