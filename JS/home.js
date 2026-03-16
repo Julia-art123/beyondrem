@@ -3,31 +3,31 @@ const reviews = [
     {
         name: "Abby",
         stars: "★★★★★",
-        photo: "../Images/photos/balloon.png",
+        photo: "Images/photos/balloon.png",
         commend: "I don't write reviews much but BeyondREM truly deserves the praise. My grandma recently passed and through BeyondREM, I got to relive one of my most precious memories with her. Thank you so much- shout out to the BeyondREM team!"
     },
     {
         name: "Micheal",
         stars: "★★★★★",
-        photo: "../Images/photos/trippy.png",
+        photo: "Images/photos/trippy.png",
         commend: "Feels like I’m totally tripping, but no drugs needed! This dreamscape is beyond surreal—the colors and vibe made me feel like I’d been transported to another dimension. BeyondREM really gave me the most thrilling experience!"
     },
     {
         name: "Roy",
         stars: "★★★★☆",
-        photo: "../Images/photos/person-cat.png",
+        photo: "Images/photos/person-cat.png",
          commend: "Thanks to BeyondREM, I finally got to experience lying on my giant kitty. The only downside? I didn’t go for the premium option, so I couldn’t control its behavior—it was just as feisty as it is at home! Next time, I’m definitely upgrading to premium!"
     },
     {
         name: "Jack",
         stars: "★★★★★",
-        photo: "../Images/photos/concert.png",
+        photo: "Images/photos/concert.png",
         commend: "I got to experience a concert with actual flowing musical notes—it was like they came to life! It was everything I imagined and more, like stepping into a dream where the music felt so real. It completely blew me away!"
     },
     {
         name: "Lucy",
         stars: "★★★★★",
-        photo: "../Images/photos/pumpkin.png",
+        photo: "Images/photos/pumpkin.png",
         commend: "I’m a big horror movie fan and always thought it’d be so cool to step into a spooky scene for Halloween. BeyondREM totally made it happen, and it turned out to be one of the most unforgettable Halloweens ever!"
     }
   ];
